@@ -1,6 +1,5 @@
 /**
  * Proyectos que se muestran en el carrusel.
- * Para agregar uno, copiá el ejemplo comentado y completalo.
  *
  * - title / description: texto en español (es) e inglés (en)
  * - url:   a dónde lleva el clic (demo, repositorio, etc.)
