@@ -1,17 +1,3 @@
-/**
- * Relay del formulario de contacto → WhatsApp (vía CallMeBot)
- * ------------------------------------------------------------
- * Este código se ejecuta en Google Apps Script (script.google.com).
- * En el repo se guarda solo como referencia: no contiene datos sensibles.
- * Tu número y tu API key NO están escritos acá: se guardan en
- * "Configuración del proyecto → Propiedades del script":
- *
- *   WHATSAPP_PHONE    →  tu número con código de país, ej: +549221XXXXXXX
- *   CALLMEBOT_APIKEY  →  la API key que te manda CallMeBot por WhatsApp
- *
- * Así, la página pública solo conoce la URL de este script, nunca tu número.
- */
-
 const MAX_PER_HOUR = 15; // límite anti-spam de consultas por hora
 
 function doPost(e) {
@@ -60,7 +46,6 @@ function doPost(e) {
   }
 }
 
-/** Ejecutá esta función una vez desde el editor para autorizar y probar. */
 function probarWhatsApp() {
   const ok = sendWhatsApp_('✅ Prueba: el formulario de tu web ya puede enviarte mensajes.');
   Logger.log(ok ? 'Mensaje enviado. Revisá tu WhatsApp.' : 'Falló el envío. Revisá las Propiedades del script.');
