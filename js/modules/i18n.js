@@ -1,5 +1,5 @@
 /**
- * Internacionalización (español / inglés).
+ 
  * Traduce los elementos marcados con data-i18n* y avisa a otros módulos
  * cuando cambia el idioma, para que vuelvan a renderizar su contenido.
  */
